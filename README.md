@@ -20,3 +20,4 @@
 `npm install babel-preset-es2015 --save-dev`
 ## 页面自动刷新
 `npm install connect-livereload --save-dev`
+`npm install babel-polyfill --save-dev`
