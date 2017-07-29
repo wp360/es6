@@ -18,3 +18,5 @@
 `npm install require-dir --save-dev`
 ## 配置 .babelrc 如下 同时安装依赖包
 `npm install babel-preset-es2015 --save-dev`
+## 页面自动刷新
+`npm install connect-livereload --save-dev`
