@@ -21,3 +21,31 @@
 ## 页面自动刷新
 `npm install connect-livereload --save-dev`
 `npm install babel-polyfill --save-dev`
+
+## 接口封装
+```javascript
+1. 期号、倒计时、销售状态；
+2. 遗漏；
+3. 奖号（每十分钟开奖一次）
+相关知识点：
+① 定义类
+② Promise实例
+var promise = new Promise(function(resolve, reject) {
+  // ... some code
+
+  if (/* 异步操作成功 */){
+    resolve(value);
+  } else {
+    reject(error);
+  }
+});
+③ Call 方法和 Apply 方法
+Call方法：
+语法：call(thisObj[,arg1,arg2,...,argN])
+定义：调用对象的一个方法，用另一个对象替换当前对象
+
+Apply方法：
+语法：apply([thisObj,argArray])
+定义：应用某一个对象的一个方法，用另一个对象替换当前对象
+[参考](http://es6.ruanyifeng.com/)
+```

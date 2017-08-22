@@ -7,6 +7,7 @@ class Interface{
      * @return {[type]}       [description]
      */
     getOmit(issue) {
+        // 为什么要先保存this,而不是在箭头函数中直接用this，因为在箭头函数的this指向是在它定义的时候，而不是运行时候
         let self = this;
         return new Promise((resolve,reject) => {
             $.ajax({
@@ -22,7 +23,7 @@ class Interface{
                 error:function(err) {
                     reject.call(err);
                 }
-            })
+            });
         });
     }
     /**
@@ -40,13 +41,13 @@ class Interface{
                 },
                 dataType:'json',
                 success:function(res) {
-                    self.setOpenCode(res.data);
+                    self.setOpenCode(res.data);//保存开奖号码
                     resolve.call(self,res);
                 },
                 error:function(err) {
                     reject.call(err);
                 }
-            })
+            });
         });
     }
 
@@ -57,7 +58,6 @@ class Interface{
      */
     getState(issue){
         let self = this;
-        // 为什么要先保存this,而不是在箭头函数中直接用this，因为在箭头函数的this指向是在它定义的时候，而不是运行时候
         return new Promise((resolve,reject) => {
             $.ajax({
                 url:'/get/state',
@@ -71,7 +71,7 @@ class Interface{
                 error:function(err) {
                     reject.call(err);
                 }
-            })
+            });
         });
     }
 }
