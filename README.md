@@ -51,5 +51,35 @@ Apply方法：
 ```
 ## 计算玩法
 ```javascript
-1. 玩法排列组合
+1. 计算注数
+2. 计算奖金范围
+3. 组合运算
+```
+## 初始化奖金和玩法及说明
+```javascript
+1. 初始化奖金和玩法及说明
+2. 初始化号码
+3. 设置遗漏数据
+4. 设置开奖
+5. 号码选中取消
+
+知识点：数组实例的 entries()，keys() 和 values();
+/*示例：*/
+for (let index of ['a', 'b'].keys()) {
+  console.log(index);
+}
+// 0
+// 1
+
+for (let elem of ['a', 'b'].values()) {
+  console.log(elem);
+}
+// 'a'
+// 'b'
+
+for (let [index, elem] of ['a', 'b'].entries()) {
+  console.log(index, elem);
+}
+// 0 "a"
+// 1 "b"
 ```
