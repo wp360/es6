@@ -174,6 +174,67 @@ student2.speak()
 编程应该 简单&抽象
 ```
 
+## UML类图
+> Unified Modeling Language 统一建模语言
+
+* 画图工具（MS Office Visio、www.processon.com)
+
+## 设计原则
+
+* 描述
+```
+按照某种思路或者标准来实现功能
+功能相同，可以有不同的设计方案来实现
+伴随着需求增加，设计的作用才能体现出来
+```
+
+## UNIX / LINUX 设计哲学
+
+* 准则1. 小即是美
+
+* 准则2. 让每个程序之做好一件事
+
+* 准则3. 快速建立原型
+
+* 准则4. 舍弃高效率而取可移植性
+
+* 准则5. 采用纯文本来存储数据
+
+* 准则6. 充分利用软件的杠杆效应(软件复用)
+
+* 准则7. 使用 shell 脚本来提高杠杆效应和可移植性
+
+* 准则8. 避免强制性的用户界面
+
+* 准则9. 让每个程序都称为过滤器
+
+#### 小准则
+
+* 允许用户定制环境
+
+* 尽量是操作系统内核小而轻量化
+
+* 使用小写字母并尽量简写
+
+* 沉默是金
+
+* 各部分之和大于整体
+
+* 寻求90%的解决方案(2/8定律)
+
+## SOLID设计五大原则
+
+* S(Single-Resposibility Principle): 单一职责原则
+
+* O(Open-Closed principle): 开放封闭原则
+
+* L(Liskov-Substituion Principle): 李氏替换原则
+
+* I(Interface-Segregation Principle): 接口隔离原则
+
+* D(Dependecy-Inversion Principle): 依赖倒置原则
+
+
 ## git 远程分支上传
 ```
 git remote add origin https://github.com/wp360/es6.git
